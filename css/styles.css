@@ -1,1 +1,51 @@
-/* No CSS */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  background-attachment: fixed;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/Capa,jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/Capa,jpg);
+  height: 80vh;
+  background-size: cover;
+  background-position: top;
+}
+
+.large-hero {
+  position: relative;
+}
+
+.large-hero__text-content {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.large-hero__title {
+  font-weight: 300;
+  color: #070035;
+  font-size: 4.8rem;
+}
+
+.large-hero__subtitle {
+  font-weight: 300;
+  color: #BD9441;
+  font-size: 2.8rem;
+}
