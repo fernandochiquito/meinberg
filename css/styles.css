@@ -227,3 +227,7 @@ ion-icon {
   font-size: .85rem;
   margin: 1.5rem 0;
 }
+
+.parceiras img {
+  max-height: 6rem;
+}
