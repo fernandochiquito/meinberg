@@ -119,9 +119,10 @@ ul {
 }
 
 .wrapper {
-  max-width: 1220px;
-  margin-left: 18px;
+  max-width: 1100px;
+  margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
   padding-left: 18px;
   padding-right: 18px;
 }
@@ -129,4 +130,94 @@ ul {
 .wrapper .wrapper {
   padding-left: 0;
   padding-right: 0;
+}
+
+.page-section {
+  padding: 1.2rem 0;
+}
+
+@media (min-width: 800px) {
+  .page-section {
+    padding: 4.5rem 0;
+  }
+}
+
+.page-section--blue {
+  background-color: #070035;
+  color: #ffffff;
+}
+
+ion-icon {
+  font-size: 2.1rem;
+  color: #070035;
+}
+
+.headline {
+  color: #070035;
+  font-weight: 300;
+  font-size: 1.9rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 530px) {
+  .headline {
+    font-size: 2.875rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.headline--centered {
+  text-align: center;
+}
+
+.headline--gold {
+  color: #BD9441;
+}
+
+.headline--small {
+  font-size: 1.3rem;
+}
+
+@media (min-width: 530px) {
+  .headline--small {
+    font-size: 1.75rem;
+  }
+}
+
+.headline--narrow {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.headline--light {
+  font-weight: 100;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row--gutters {
+  margin-right: -3rem;
+}
+
+.row--gutters > div {
+  padding-right: 3rem;
+}
+
+@media (min-width: 800px) {
+  .row__large-3 {
+    float: left;
+    width: 25%;
+    padding-right: 3rem;
+  }
+}
+
+.generic-content-container p {
+  line-height: 1.65;
+  font-size: .85rem;
+  margin: 1rem 0;
 }
