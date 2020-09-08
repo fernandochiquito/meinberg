@@ -10,11 +10,17 @@
         padding-right: 3rem;
     }
 
+    &__large-3 {
+        margin: 2.5rem 1rem;
+        padding: 1rem;
+    }
+
     @include atMedium {
         &__large-3 {
+            margin: 1rem 1rem;
             float: left;
-            width: 25%;
-            padding-right: 3rem
+            width: 20%;
+            padding: 1rem;
         }
     }
 }

@@ -208,16 +208,22 @@ ion-icon {
   padding-right: 3rem;
 }
 
+.row__large-3 {
+  margin: 2.5rem 1rem;
+  padding: 1rem;
+}
+
 @media (min-width: 800px) {
   .row__large-3 {
+    margin: 1rem 1rem;
     float: left;
-    width: 25%;
-    padding-right: 3rem;
+    width: 20%;
+    padding: 1rem;
   }
 }
 
 .generic-content-container p {
   line-height: 1.65;
   font-size: .85rem;
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
