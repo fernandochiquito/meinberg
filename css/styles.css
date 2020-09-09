@@ -222,6 +222,17 @@ ion-icon {
   }
 }
 
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
+}
+
+.generic-content-container {
+  padding: 1rem;
+}
+
 .generic-content-container p {
   line-height: 1.65;
   font-size: .85rem;
