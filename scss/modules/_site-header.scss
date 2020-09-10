@@ -3,21 +3,59 @@
     position: absolute;
     width: 100%;
     z-index: 2;
-    background-color: rgba($color: $mainBlue, $alpha: .3);
+
+    @include atMedium {
+        background-color: rgba($color: $mainBlue, $alpha: .3);
+
+    }
 
     &__btn-container {
         float: right;
     }
 
     img {
-        max-width: 150px;
+        max-width: 100px;
         height: auto;
+
+        @include atMedium {
+            max-width: 150px;
+        }
     }
 
     &__logo {
         background-color: $mainBlue;
         top: 0;
-        padding: 15px 20px;
+        padding: 7px 15px;
         position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @include atMedium {
+            left: auto;
+            transform: translateX(0);
+            padding: 15px 20px;
+        }
+
+    }
+
+    &__menu-icon {
+        width: 20px;
+        height: 20px;
+        background-color: $mainWhite;
+        position: absolute;
+        top: 17px;
+        right: 17px;
+
+        @include atMedium {
+            display: none;
+        }
+    }
+
+    &__menu-content {
+        display: none;
+
+        @include atMedium {
+            display: block;
+        }
     }
 }
