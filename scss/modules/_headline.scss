@@ -1,0 +1,40 @@
+.headline {
+    color: $mainBlue;
+    font-weight: 300;
+    font-size: 1.9rem;
+    margin-bottom: 0;
+
+    &--centered {
+        text-align: center;
+    }
+
+    &--gold {
+        color: $mainGold;
+    }
+
+    &--white {
+        color: $mainWhite;
+    }
+
+    &--narrow {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &--small {
+        font-size: 1.75rem;
+    }
+
+    &--smaller {
+        font-size: 1.5rem;
+    }
+
+    &--b-margin {
+        margin-bottom: 2rem;
+    }
+
+    &--bold {
+        font-weight: 500;
+    }
+}

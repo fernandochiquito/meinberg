@@ -1,0 +1,14 @@
+.btn {
+    background-color: $mainGold;
+    color: #fff;
+    text-decoration: none;
+    padding: .75rem 1.2rem;
+    display: inline-block;
+
+    &--small {
+        font-size: .75rem;
+        padding: .5rem 1rem;
+    }
+
+
+}
