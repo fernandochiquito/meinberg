@@ -190,6 +190,10 @@ ion-icon {
   display: inline-block;
 }
 
+.btn:hover {
+  background-color: #7e5d1b;
+}
+
 .btn--small {
   font-size: .75rem;
   padding: .5rem 1rem;
@@ -210,5 +214,34 @@ ion-icon {
 
 .parceiras {
   background-color: #070035;
+}
+
+.site-footer {
+  background-color: #141414;
+  color: #ffffff;
+  padding: .5rem 0;
+  font-size: .75rem;
+  text-align: center;
+}
+
+.site-footer a {
+  color: #ffffff;
+}
+
+.site-footer a:hover {
+  color: #818181;
+}
+
+.site-footer__text {
+  display: block;
+  margin-bottom: 1rem;
+  margin-right: 1.5rem;
+}
+
+@media (min-width: 800px) {
+  .site-footer__text {
+    display: inline;
+    margin-bottom: 0;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

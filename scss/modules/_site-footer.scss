@@ -1,0 +1,26 @@
+.site-footer {
+    background-color: $mainBlack;
+    color: #ffffff;
+    padding: .5rem 0;
+    font-size: .75rem;
+    text-align: center;
+
+    a {
+        color: #ffffff;
+
+        &:hover{
+            color: #818181;
+        }
+    }
+
+    &__text {
+        display: block;
+        margin-bottom: 1rem;
+        margin-right: 1.5rem;
+
+        @include atMedium {
+            display: inline;
+            margin-bottom: 0;
+        }
+    }
+}
