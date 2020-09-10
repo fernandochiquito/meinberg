@@ -244,4 +244,54 @@ ion-icon {
     margin-bottom: 0;
   }
 }
+
+.site-header {
+  padding: 10px 0;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  background-color: rgba(7, 0, 53, 0.3);
+}
+
+.site-header__btn-container {
+  float: right;
+}
+
+.site-header img {
+  max-width: 150px;
+  height: auto;
+}
+
+.site-header__logo {
+  background-color: #070035;
+  top: 0;
+  padding: 15px 20px;
+  position: absolute;
+}
+
+.primary-nav--col-right {
+  float: right;
+}
+
+.primary-nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.primary-nav ul::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.primary-nav li {
+  float: left;
+  padding-right: 20px;
+}
+
+.primary-nav a {
+  color: #EDFFD9;
+  display: block;
+  padding: 10px 0;
+}
 /*# sourceMappingURL=styles.css.map */
