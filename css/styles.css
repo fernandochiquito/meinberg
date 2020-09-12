@@ -62,9 +62,9 @@ ul {
   padding-top: 60px;
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-80%);
-          transform: translateY(-80%);
-  width: 100%;
+  -webkit-transform: translateY(-60%);
+          transform: translateY(-60%);
+  width: 50%;
   text-align: center;
 }
 
@@ -107,7 +107,7 @@ ul {
   font-weight: 300;
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
   max-width: 35rem;
-  margin-top: 1rem;
+  margin-top: 0;
   margin-left: auto;
   margin-right: auto;
 }
@@ -115,7 +115,12 @@ ul {
 @media (min-width: 530px) {
   .large-hero__decription {
     font-size: 1.5rem;
+    margin-top: 1rem;
   }
+}
+
+.large-hero--white {
+  color: #EDFFD9;
 }
 
 .grid {
