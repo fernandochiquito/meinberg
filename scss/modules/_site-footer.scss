@@ -15,12 +15,14 @@
 
     &__text {
         display: block;
+        font-size: .75rem;
         margin-bottom: 1rem;
         margin-right: 1.5rem;
 
         @include atMedium {
+            font-size: .75rem;
             display: inline;
-            margin-bottom: 0;
+            margin-bottom: .75rem;
         }
     }
 }

@@ -68,26 +68,6 @@ ul {
   text-align: center;
 }
 
-.large-hero__title {
-  font-weight: 300;
-  text-transform: uppercase;
-  color: #070035;
-  font-size: 2.4rem;
-  margin: 0;
-}
-
-@media (min-width: 530px) {
-  .large-hero__title {
-    font-size: 3.2rem;
-  }
-}
-
-@media (min-width: 800px) {
-  .large-hero__title {
-    font-size: 4.8rem;
-  }
-}
-
 .large-hero__subtitle {
   font-weight: 500;
   color: #BD9441;
@@ -97,16 +77,47 @@ ul {
 
 @media (min-width: 530px) {
   .large-hero__subtitle {
-    font-size: 2.2rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .large-hero__subtitle {
+    font-size: 2rem;
+  }
+}
+
+.large-hero__logo {
+  max-width: 150px;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  padding: 1.5rem 0 .75rem 0;
+}
+
+@media (min-width: 530px) {
+  .large-hero__logo {
+    margin-top: 2rem;
+    max-width: 200px;
+    padding: 1.5rem 0 .75rem 0;
+  }
+}
+
+@media (min-width: 800px) {
+  .large-hero__logo {
+    margin-top: 2rem;
+    max-width: 350px;
+    padding: 1.5rem 0 .75rem 0;
   }
 }
 
 .large-hero__decription {
   color: #141414;
-  font-size: 1.1rem;
+  display: none;
+  font-size: .9rem;
   font-weight: 300;
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
   max-width: 35rem;
+  padding-left: 1rem;
   margin-top: 0;
   margin-left: auto;
   margin-right: auto;
@@ -114,8 +125,15 @@ ul {
 
 @media (min-width: 530px) {
   .large-hero__decription {
-    font-size: 1.5rem;
+    display: block;
+    font-size: 1.2rem;
     margin-top: 1rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .large-hero__decription {
+    font-size: 1.5rem;
   }
 }
 
@@ -205,6 +223,17 @@ ion-icon {
   padding: .5rem 1rem;
 }
 
+.btn__t-margin {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .btn__t-margin {
+    display: inline-block;
+    margin-top: 1.5rem;
+  }
+}
+
 .galeria {
   display: -ms-grid;
   display: grid;
@@ -240,14 +269,16 @@ ion-icon {
 
 .site-footer__text {
   display: block;
+  font-size: .75rem;
   margin-bottom: 1rem;
   margin-right: 1.5rem;
 }
 
 @media (min-width: 800px) {
   .site-footer__text {
+    font-size: .75rem;
     display: inline;
-    margin-bottom: 0;
+    margin-bottom: .75rem;
   }
 }
 

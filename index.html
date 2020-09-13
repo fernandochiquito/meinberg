@@ -2,51 +2,54 @@
 <html lang="en">
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177929446-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-177929446-1');
+  </script>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" type="text/css" href="/css/normalize.css/normalize.css" />
-  <link rel="stylesheet" type="text/css" href="css/styles.css" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-    rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" type="text/css" href="/css/normalize.css/normalize.css"/>
+  <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
   <title>Meinberg Administração e Corretagem de Seguros</title>
-  <meta name="keywords"
-    content="Seguro, seguro de vida, Seguro Residência, Seguro Empresarial, Seguro Saúde, Seguro de Automóvel, Previdência Privada, seguro Fiança, " />
-  <meta name="description"
-    content="Meinberg Administração e Corretagem de Seguros com foco em Seguros de Vida,  Previdência Privada, Soluções para Locação (Fiança / Capitalização / Imobiliária), Riscos de Engenharia (Energia Solar / Placas Fotovoltaicas), Seguro Residência, Seguro Empresarial, Seguro Saúde, Seguro de Automóvel" />
+  <meta name="keywords" content="Seguro, seguro de vida, Seguro Residência, Seguro Empresarial, Seguro Saúde, Seguro de Automóvel, Previdência Privada, seguro Fiança"/>
+  <meta name="description" content="Meinberg Administração e Corretagem de Seguros com foco em Seguros de Vida,  Previdência Privada, Soluções para Locação (Fiança / Capitalização / Imobiliária), Riscos de Engenharia (Energia Solar / Placas Fotovoltaicas), Seguro Residência, Seguro Empresarial, Seguro Saúde, Seguro de Automóvel"/>
 </head>
 
 <body>
   <div class="large-hero">
     <picture>
-      <img src="img/Capa-Meinberg.jpg" class="large-hero__image" alt="Pessoa mostrando icones de proteção de seguro" />
+      <source media="(min-width: 1380px)" srcset="img/hero__lp--large.jpg" />
+      <source media="(min-width: 990px)" srcset="img/hero__lp--medium.jpg" />
+      <source media="(min-width: 640px)" srcset="img/hero__lp--small.jpg" />
+      <img src="img/hero__lp--small.jpg" class="large-hero__image" alt="Skyline da Cidade de São Paulo" />
     </picture>
+
     <div class="large-hero__text-content">
       <div class="titulo">
-        <h1 class="large-hero__title large-hero--white">Meinberg</h1>
+        <img class="large-hero__logo" src="img/Logo-MM-branco.svg" alt="">
         <h2 class="large-hero__subtitle">Corretor de Seguros</h2>
-        <p class="large-hero__decription large-hero--white">
-          Corretagem de Seguros / Serviços Financeiros / Serviços Imobiliários
-        </p>
+        <p class="large-hero__decription large-hero--white"> Corretagem de Seguros / Serviços Financeiros / Serviços Imobiliários</p>
       </div>
+      <a href="mailto:paulo@meinberg.biz" title="Entre em contato pra ter a sua cotação!"
+        class="btn btn__t-margin">Entre em Contato</a>
     </div>
   </div>
-
- 
   <footer class="site-footer">
     <div class="wrapper">
-
       <p>
-        <span class="site-footer__text">
-          Copyright &copy; 2020 <strong>Meinberg Corretora de Seguros</strong>. All rights
-          reserved. Criado e desenvolvido por <strong><a href="#">Fernando Chiquito</a></strong>.
+        <span class="site-footer__text">Copyright &copy; 2020 <strong>Meinberg Corretora de Seguros</strong>. All rights reserved. Criado e desenvolvido por <strong><a href="https://fernandochiquito.github.io" target="_blank">Fernando Chiquito</a></strong>.
         </span>
-        <a href="#" class="btn btn--small">Entre em Contato</a>
+        <a href="mailto:paulo@meinberg.biz" title="Entre em contato pra ter a sua cotação!" class="btn btn--small">Entre em Contato</a>
       </p>
     </div>
 
   </footer class="site-footer">
   <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 </body>
-
 </html>

@@ -14,5 +14,16 @@
         padding: .5rem 1rem;
     }
 
+    &__t-margin {
+        display: none;
+    
+        @include atMedium {
+            display: inline-block;
+            margin-top: 1.5rem;
+    
+        }
 
+    }
+
+    
 }
