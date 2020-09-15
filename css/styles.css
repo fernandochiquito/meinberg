@@ -62,10 +62,17 @@ ul {
   padding-top: 60px;
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-80%);
-          transform: translateY(-80%);
+  -webkit-transform: translateY(-75%);
+          transform: translateY(-75%);
   width: 100%;
   text-align: center;
+}
+
+@media (min-width: 800px) {
+  .large-hero__text-content {
+    -webkit-transform: translateY(-80%);
+            transform: translateY(-80%);
+  }
 }
 
 .large-hero__title {
