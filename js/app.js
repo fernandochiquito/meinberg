@@ -1,9 +1,20 @@
-function person(name, favColor) {
-    console.log("Hello, my name is " + name + " and my favorite color is " + favColor + ".");
-}
+class MobileMenu {
+    constructor() {
+      this.menuIcon = document.querySelector(".site-header__menu-icon")
+      this.menuContent = document.querySelector(".site-header__menu-content")
+      this.siteHeader = document.querySelector(".site-header")
+      this.events()
+    }
+  
+    events() {
+      this.menuIcon.addEventListener("click", () => this.toggleTheMenu())
+    }
+  
+    toggleTheMenu() {
+      this.menuContent.classList.toggle("site-header__menu-content--is-visible")
+      this.siteHeader.classList.toggle("site-header--is-expanded")
+      this.menuIcon.classList.toggle("site-header__menu-icon--close-x")
+    }
+  }
 
-let johnName = "John Doe";
-let johnFavColor = "blue";
-
-person(johnName, johnFavColor)
-person("Jane Smith", "green")
+  let mobileMenu = new MobileMenu();
