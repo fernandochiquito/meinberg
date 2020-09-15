@@ -3,7 +3,7 @@
     font-weight: 300;
     font-size: 1.9rem;
     margin-bottom: 0;
-
+    
     &--centered {
         text-align: center;
     }
@@ -14,6 +14,10 @@
 
     &--white {
         color: $mainWhite;
+    }
+
+    &--red {
+        color: red;
     }
 
     &--narrow {
@@ -27,7 +31,7 @@
     }
 
     &--smaller {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     &--b-margin {

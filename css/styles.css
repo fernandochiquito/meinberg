@@ -145,6 +145,10 @@ ul {
   color: #EDFFD9;
 }
 
+.headline--red {
+  color: red;
+}
+
 .headline--narrow {
   max-width: 500px;
   margin-left: auto;
@@ -156,7 +160,7 @@ ul {
 }
 
 .headline--smaller {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .headline--b-margin {
@@ -255,7 +259,7 @@ ion-icon {
 
 @media (min-width: 800px) {
   .site-header {
-    background-color: rgba(7, 0, 53, 0.3);
+    background-color: rgba(20, 20, 20, 0.3);
   }
 }
 
