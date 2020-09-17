@@ -4,9 +4,17 @@
     text-decoration: none;
     padding: .75rem 1.2rem;
     display: inline-block;
+    transition: all .2s;
 
     &:hover{
         background-color: $mainGoldDark;
+        transform: translateY(-.3rem);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    }
+
+    &:active {
+        transform: translateY(-.1rem);
+        box-shadow: 0 .5rem .7rem rgba(0, 0, 0, 0.2);
     }
 
     &--small {
