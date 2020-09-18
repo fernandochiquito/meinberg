@@ -222,15 +222,19 @@
       <form method="post" action="mailer-new.php" class="contact-form">
         <div class="row">
           <?php
-
-            <div class="form-messages sucess">
+            if ($_GET['success'] == 1) {
+                echo "<div class=\"form-messages sucess\">
               Obrigado pelo contato. Responderemos o mais rápido possivel.
-            </div>
-            <div class="form-messages error">
-              Ops, alguma coisa deu errado. Tentar novamente.
-            </div>
-          ?>
+            </div>";
+            }
 
+            if ($_GET['success'] == -1) {
+                echo "<div class=\"form-messages error\">
+                Ops, alguma coisa deu errado. Tentar novamente.
+            </div>";
+            }
+
+          ?>
         <div class="row">
           <div class="col-1-of-3">
             <label for="name">Nome</label>
