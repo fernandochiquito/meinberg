@@ -50,6 +50,36 @@ ul {
   margin-right: auto;
 }
 
+.btn {
+  background-color: #BD9441;
+  color: #fff;
+  text-decoration: none;
+  padding: .75rem 1.2rem;
+  display: inline-block;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.btn:hover {
+  background-color: #7e5d1b;
+  -webkit-transform: translateY(-0.3rem);
+          transform: translateY(-0.3rem);
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  -webkit-transform: translateY(-0.1rem);
+          transform: translateY(-0.1rem);
+  -webkit-box-shadow: 0 0.5rem 0.7rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5rem 0.7rem rgba(0, 0, 0, 0.2);
+}
+
+.btn--small {
+  font-size: .75rem;
+  padding: .5rem 1rem;
+}
+
 .large-hero {
   position: relative;
   border-bottom: 10px solid #070035;
@@ -71,8 +101,8 @@ ul {
 
 @media (min-width: 800px) {
   .large-hero__text-content {
-    -webkit-transform: translateY(-80%);
-            transform: translateY(-80%);
+    -webkit-transform: translateY(-65%);
+            transform: translateY(-65%);
   }
 }
 
@@ -92,7 +122,7 @@ ul {
 
 @media (min-width: 800px) {
   .large-hero__title {
-    font-size: 4.8rem;
+    font-size: 4.5rem;
   }
 }
 
@@ -105,7 +135,7 @@ ul {
 
 @media (min-width: 530px) {
   .large-hero__subtitle {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 }
 
@@ -124,14 +154,6 @@ ul {
   .large-hero__decription {
     font-size: 1.5rem;
   }
-}
-
-.grid {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 20px;
-  -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
 .headline {
@@ -179,6 +201,14 @@ ul {
   font-weight: 500;
 }
 
+.grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
 .cards {
   margin: .75rem;
   padding: 1rem;
@@ -186,6 +216,7 @@ ul {
 
 .cards p {
   line-height: 1.65;
+  text-align: justify;
   font-size: .85rem;
   margin: .75rem 0 1.5rem 0;
 }
@@ -193,36 +224,6 @@ ul {
 ion-icon {
   font-size: 2.1rem;
   color: #070035;
-}
-
-.btn {
-  background-color: #BD9441;
-  color: #fff;
-  text-decoration: none;
-  padding: .75rem 1.2rem;
-  display: inline-block;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-}
-
-.btn:hover {
-  background-color: #7e5d1b;
-  -webkit-transform: translateY(-0.3rem);
-          transform: translateY(-0.3rem);
-  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-}
-
-.btn:active {
-  -webkit-transform: translateY(-0.1rem);
-          transform: translateY(-0.1rem);
-  -webkit-box-shadow: 0 0.5rem 0.7rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0.5rem 0.7rem rgba(0, 0, 0, 0.2);
-}
-
-.btn--small {
-  font-size: .75rem;
-  padding: .5rem 1rem;
 }
 
 .galeria {
