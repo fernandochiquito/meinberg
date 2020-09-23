@@ -222,18 +222,17 @@
       <form method="post" action="mailer-new.php" class="contact-form">
         <div class="row">
           <?php
-            if ($_GET['success'] == 1) {
+            if($_GET['success'] == 1) {
                 echo "<div class=\"form-messages sucess\">
               Obrigado pelo contato. Responderemos o mais rápido possivel.
             </div>";
             }
 
-            if ($_GET['success'] == -1) {
+            if($_GET['success'] == -1) {
                 echo "<div class=\"form-messages error\">
                 Ops, alguma coisa deu errado. Tentar novamente.
             </div>";
             }
-
           ?>
         <div class="row">
           <div class="col-1-of-3">
@@ -245,55 +244,18 @@
         </div>
         <div class="row">
           <div class="col-1-of-3">
-            <label for="telefone">Telefone</label>
-          </div>
-          <div class="col-2-of-3">
-            <input type="tel" name="telefone" id="telefone" placeholder="Telefone" required>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-1-of-3">
             <label for="email">Email</label>
           </div>
           <div class="col-2-of-3">
             <input type="email" name="email" id="email" placeholder="E-mail" required>
           </div>
-        </div>
+        </div>      
         <div class="row">
           <div class="col-1-of-3">
-            <label for="achou">Como você nos achou?</label>
+            <label for="message">Mensagem</label>
           </div>
           <div class="col-2-of-3">
-            <select name="achou" id="achou">
-              <option value="indicacao" selected>Indicação</option>
-              <option value="google">Google</option>
-              <option value="propaganda">Propaganda</option>
-              <option value="outro">Outra forma</option>
-            </select>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-1-of-3">
-            <label for="news">Podemos contactar você com novidades e ofertas?</label>
-          </div>
-          <div class="col-2-of-3">
-            <input type="checkbox" name="news" id="news" checked> Sim, por favor.
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-1-of-3">
-            <label for="assunto">Assunto</label>
-          </div>
-          <div class="col-2-of-3">
-            <input type="text" name="assunto" id="assunto" placeholder="Assunto" required>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-1-of-3">
-            <label for="msg">Mensagem</label>
-          </div>
-          <div class="col-2-of-3">
-            <textarea name="mgs" id="msg" cols="30" rows="10" placeholder="Deixe a sua mensagem" required></textarea>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Deixe a sua mensagem" required></textarea>
           </div>
         </div>
         <div class="row">
