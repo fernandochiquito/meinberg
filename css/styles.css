@@ -58,6 +58,7 @@ ul {
   display: inline-block;
   -webkit-transition: all .2s;
   transition: all .2s;
+  border-radius: 2px;
 }
 
 .btn:hover {
@@ -78,6 +79,7 @@ ul {
 .btn--small {
   font-size: .75rem;
   padding: .5rem 1rem;
+  margin-top: .65rem;
 }
 
 .large-hero {
@@ -204,21 +206,44 @@ ul {
 .grid {
   display: -ms-grid;
   display: grid;
-  grid-gap: 20px;
-  -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 10px;
+  -ms-grid-columns: (minmax(255px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
 }
 
 .cards {
-  margin: .75rem;
+  margin: 0.75rem;
   padding: 1rem;
+  border-radius: 5px;
+  overflow: hidden;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.cards .headline {
+  padding: 10px 0;
+}
+
+.cards:hover {
+  -webkit-transform: translateY(-10px) scale(1.05);
+          transform: translateY(-10px) scale(1.05);
+  border-radius: 5px;
+}
+
+.cards:hover p {
+  background-color: rgba(7, 0, 53, 0.95);
+  color: #EDFFD9;
 }
 
 .cards p {
   line-height: 1.65;
   text-align: justify;
-  font-size: .85rem;
-  margin: .75rem 0 1.5rem 0;
+  font-size: 0.85rem;
+  margin: 0.75rem 0 1.5rem 0;
+  border-radius: 5px;
+  padding: 0.625rem;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 ion-icon {
@@ -324,6 +349,7 @@ ion-icon {
 
 .site-header__logo {
   background-color: #070035;
+  border-radius: 2px;
   top: 0;
   padding: 7px 15px;
   position: absolute;
