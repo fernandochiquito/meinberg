@@ -1,11 +1,30 @@
 .cards {
-    margin: .75rem;
-    padding: 1rem;
+  margin: 0.75rem;
+  padding: 1rem;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all 0.4s;
 
-    p{
-        line-height: 1.65;
-        text-align: justify;
-        font-size: .85rem;
-        margin: .75rem 0 1.5rem 0;
+  .headline {
+    padding: 10px 0;
+  }
+
+  &:hover {
+    transform: translateY(-10px) scale(1.05);
+    border-radius: 5px;
+
+    p {
+      background-color: rgba($color: $mainBlue, $alpha: 0.95);
+      color: $mainWhite;
     }
+  }
+
+  p {
+    line-height: 1.65;
+    text-align: justify;
+    font-size: 0.85rem;
+    margin: 0.75rem 0 1.5rem 0;
+    border-radius: 5px;
+    padding: 0.625rem;
+  }
 }
