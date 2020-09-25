@@ -103,8 +103,8 @@ ul {
 
 @media (min-width: 800px) {
   .large-hero__text-content {
-    -webkit-transform: translateY(-65%);
-            transform: translateY(-65%);
+    -webkit-transform: translateY(-85%);
+            transform: translateY(-85%);
   }
 }
 
@@ -261,8 +261,8 @@ ion-icon {
   display: -ms-grid;
   display: grid;
   grid-gap: 1rem;
-  -ms-grid-columns: (150px)[auto-fill];
-      grid-template-columns: repeat(auto-fill, 150px);
+  -ms-grid-columns: (75px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 75px);
   grid-auto-rows: 130px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -281,7 +281,7 @@ ion-icon {
           align-items: center;
   padding: 5px;
   background-color: white;
-  height: 130px;
+  height: 75px;
 }
 
 .parceiras {
