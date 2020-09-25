@@ -207,8 +207,8 @@ ul {
   display: -ms-grid;
   display: grid;
   grid-gap: 10px;
-  -ms-grid-columns: (minmax(255px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+  -ms-grid-columns: (minmax(275px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
 }
 
 .cards {
@@ -267,6 +267,7 @@ ion-icon {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 4rem;
 }
 
 .logos {
