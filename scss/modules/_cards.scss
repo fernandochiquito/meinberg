@@ -4,7 +4,10 @@
   border-radius: 5px;
   overflow: hidden;
   transition: all 0.4s;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
   hyphens: auto;
+
 
   .headline {
     padding: 10px 0;
@@ -28,6 +31,8 @@
     border-radius: 5px;
     padding: 0.625rem;
     transition: all 0.4s;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
     hyphens: auto;
 
   }
