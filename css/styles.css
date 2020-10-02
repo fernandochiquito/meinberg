@@ -1,3 +1,31 @@
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 *,
 :after,
 :before {
@@ -60,7 +88,7 @@ ul {
 }
 
 .btn:hover {
-  background-color: #7e5d1b;
+  background-color: #dfae4d;
   transform: translateY(-0.3rem);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
@@ -106,6 +134,7 @@ ul {
   color: #070035;
   font-size: 2.4rem;
   margin: 0;
+  animation: moveInLeft 1s ease-out;
 }
 
 @media (min-width: 530px) {
@@ -125,6 +154,7 @@ ul {
   color: #BD9441;
   font-size: 1.5rem;
   margin: 0;
+  animation: moveInRight 1s ease-out;
 }
 
 @media (min-width: 530px) {

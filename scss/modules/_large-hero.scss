@@ -25,6 +25,7 @@
       color: $mainBlue;
       font-size: 2.4rem;
       margin: 0;
+      animation: moveInLeft 1s ease-out;
   
       @include atSmall {
         font-size: 3.2rem;
@@ -40,6 +41,7 @@
       color: $mainGold;
       font-size: 1.5rem;
       margin: 0;
+      animation: moveInRight 1s ease-out;
   
       @include atSmall {
         font-size: 2rem;
