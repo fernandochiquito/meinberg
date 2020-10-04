@@ -11,7 +11,7 @@ $subject = "Contato - Site";
 $body = "Nome: ".$nome. "\r\n".
         "Email: ".$email. "\r \n".
         "Mensagem: ".$mensagem;
-$header = "From:paulo@meinberg.biz"."\r\n"
+$header = "From:sacseguros@meinberg.biz"."\r\n"
         "Reply-To:"$email."\e\n".
         "X=Mailer:PHP/".phpversion();
 
