@@ -318,6 +318,7 @@ ion-icon {
 @media (min-width: 800px) {
   .site-footer__text {
     display: inline;
+    margin-bottom: 0;
   }
 }
 
@@ -516,7 +517,7 @@ ion-icon {
 
 .site-header__menu-content {
   opacity: 0;
-  transform: scale(1.2);
+  transform: scale(0.9);
   transition: all 0.3s ease-out;
   position: relative;
   z-index: -10;
