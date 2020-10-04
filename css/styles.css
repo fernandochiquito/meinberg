@@ -1,3 +1,31 @@
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 *,
 :after,
 :before {
@@ -5,6 +33,7 @@
   margin: 0;
   padding: 0;
   text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -49,6 +78,33 @@ ul {
   margin-right: auto;
 }
 
+.btn {
+  background-color: #BD9441;
+  color: #fff;
+  text-decoration: none;
+  padding: .75rem 1.2rem;
+  display: inline-block;
+  transition: all .2s;
+  border-radius: 2px;
+}
+
+.btn:hover {
+  background-color: #dfae4d;
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 0.7rem rgba(0, 0, 0, 0.2);
+}
+
+.btn--small {
+  font-size: .75rem;
+  padding: .5rem 1rem;
+  margin-top: .65rem;
+}
+
 .large-hero {
   position: relative;
   border-bottom: 10px solid #070035;
@@ -69,7 +125,11 @@ ul {
 
 @media (min-width: 800px) {
   .large-hero__text-content {
+<<<<<<< HEAD
     transform: translateY(-80%);
+=======
+    transform: translateY(-85%);
+>>>>>>> technical-text
   }
 }
 
@@ -79,6 +139,7 @@ ul {
   color: #070035;
   font-size: 2.4rem;
   margin: 0;
+  animation: moveInLeft 1s ease-out;
 }
 
 @media (min-width: 530px) {
@@ -89,7 +150,7 @@ ul {
 
 @media (min-width: 800px) {
   .large-hero__title {
-    font-size: 4.8rem;
+    font-size: 4.5rem;
   }
 }
 
@@ -98,11 +159,12 @@ ul {
   color: #BD9441;
   font-size: 1.5rem;
   margin: 0;
+  animation: moveInRight 1s ease-out;
 }
 
 @media (min-width: 530px) {
   .large-hero__subtitle {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 }
 
@@ -123,12 +185,15 @@ ul {
   }
 }
 
+<<<<<<< HEAD
 .grid {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
+=======
+>>>>>>> technical-text
 .headline {
   color: #070035;
   font-weight: 300;
@@ -174,22 +239,31 @@ ul {
   font-weight: 500;
 }
 
+.grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+}
+
 .cards {
-  margin: .75rem;
+  margin: 0.75rem;
   padding: 1rem;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all 0.4s;
+  hyphens: auto;
 }
 
-.cards p {
-  line-height: 1.65;
-  font-size: .85rem;
-  margin: .75rem 0 1.5rem 0;
+.cards .headline {
+  padding: 10px 0;
 }
 
-ion-icon {
-  font-size: 2.1rem;
-  color: #070035;
+.cards:hover {
+  transform: translateY(-10px) scale(1.05);
+  border-radius: 5px;
 }
 
+<<<<<<< HEAD
 .btn {
   background-color: #BD9441;
   color: #fff;
@@ -208,19 +282,42 @@ ion-icon {
 .btn:active {
   transform: translateY(-0.1rem);
   box-shadow: 0 0.5rem 0.7rem rgba(0, 0, 0, 0.2);
+=======
+.cards:hover p {
+  background-color: rgba(7, 0, 53, 0.95);
+  color: #EDFFD9;
 }
 
-.btn--small {
-  font-size: .75rem;
-  padding: .5rem 1rem;
+.cards p {
+  line-height: 1.65;
+  text-align: justify;
+  font-size: 0.85rem;
+  margin: 0.75rem 0 1.5rem 0;
+  border-radius: 5px;
+  padding: 0.625rem;
+  transition: all 0.4s;
+  hyphens: auto;
+>>>>>>> technical-text
+}
+
+ion-icon {
+  font-size: 2.1rem;
+  color: #070035;
 }
 
 .galeria {
   display: grid;
   grid-gap: 1rem;
+<<<<<<< HEAD
   grid-template-columns: repeat(auto-fill, 150px);
   grid-auto-rows: 130px;
   justify-content: center;
+=======
+  grid-template-columns: repeat(auto-fill, 75px);
+  grid-auto-rows: 130px;
+  justify-content: center;
+  margin-top: 4rem;
+>>>>>>> technical-text
 }
 
 .logos {
@@ -229,7 +326,7 @@ ion-icon {
   align-items: center;
   padding: 5px;
   background-color: white;
-  height: 130px;
+  height: 75px;
 }
 
 .parceiras {
@@ -265,12 +362,93 @@ ion-icon {
   }
 }
 
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(20, 20, 20, 0.8);
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s;
+}
+
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup__close {
+  transition: all 0.3s;
+}
+
+.popup__close:link, .popup__close:visited {
+  color: #141414;
+  display: inline-block;
+  position: absolute;
+  top: 1rem;
+  right: 1.4rem;
+  font-size: 2rem;
+  transition: all 0.3s;
+  line-height: 1;
+}
+
+.popup__close:hover {
+  color: #BD9441;
+}
+
+.popup__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  background-color: #EDFFD9;
+  border-radius: 3px;
+  box-shadow: 0 2rem 4rem rgba(20, 20, 20, 0.2);
+  display: table;
+  overflow: hidden;
+}
+
+.popup__left {
+  width: 33.333333%;
+  display: table-cell;
+}
+
+.popup__right {
+  width: 66.6666667%;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 1rem 2.5rem;
+}
+
+.popup__img {
+  display: block;
+  width: 100%;
+}
+
+.popup__text {
+  font-size: 0.8rem;
+  margin-bottom: 3rem;
+  column-count: 2;
+  column-gap: 3rem;
+  column-rule: 1px solid rgba(20, 20, 20, 0.2);
+  text-align: justify;
+  hyphens: auto;
+}
+
 .site-header {
   padding: 10px 0;
   position: absolute;
   width: 100%;
   z-index: 2;
+<<<<<<< HEAD
   transition: background-color .3s ease-out;
+=======
+  transition: background-color 0.3s ease-out;
+>>>>>>> technical-text
 }
 
 .site-header--is-expanded {
@@ -302,6 +480,7 @@ ion-icon {
 
 .site-header__logo {
   background-color: #070035;
+  border-radius: 2px;
   top: 0;
   padding: 7px 15px;
   position: absolute;
@@ -335,7 +514,11 @@ ion-icon {
   height: 3px;
   background-color: #EDFFD9;
   transform-origin: 0 0;
+<<<<<<< HEAD
   transition: transform .3s ease-out;
+=======
+  transition: transform 0.3s ease-out;
+>>>>>>> technical-text
 }
 
 .site-header__menu-icon__middle {
@@ -345,7 +528,11 @@ ion-icon {
   width: 20px;
   height: 3px;
   background-color: #EDFFD9;
+<<<<<<< HEAD
   transition: all .3s ease-out;
+=======
+  transition: all 0.3s ease-out;
+>>>>>>> technical-text
   transform-origin: 0 50%;
 }
 
@@ -358,7 +545,11 @@ ion-icon {
   height: 3px;
   background-color: #EDFFD9;
   transform-origin: 0 100%;
+<<<<<<< HEAD
   transition: transform .3s ease-out;
+=======
+  transition: transform 0.3s ease-out;
+>>>>>>> technical-text
 }
 
 @media (min-width: 800px) {
@@ -383,7 +574,11 @@ ion-icon {
 .site-header__menu-content {
   opacity: 0;
   transform: scale(1.2);
+<<<<<<< HEAD
   transition: all .3s ease-out;
+=======
+  transition: all 0.3s ease-out;
+>>>>>>> technical-text
   position: relative;
   z-index: -10;
   padding-top: 70px;
