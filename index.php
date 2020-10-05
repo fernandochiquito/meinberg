@@ -73,9 +73,13 @@
         <div class="cards">
           <h3 class="headline headline--centered headline--bold headline--smaller">
             <ion-icon name="heart-outline"></ion-icon><br>
-            Seguro Vida</h3>
+            Seguro Vida
+          </h3>
           <p>
-            Os seguros de vida foram desenvolvidos para assegurar o futuro financeiro da sua família e de quem importa para você, sem atrapalhar sua renda atual. Os planos geralmente cobrem várias situações: acidentes pessoais, morte acidental, morte natural e assistências personalizadas. Conheça nossos produtos e entre em contato para escolher a melhor opção.
+            Os seguros de vida foram desenvolvidos para assegurar o futuro financeiro da sua família e de quem importa
+            para você, sem atrapalhar sua renda atual. Os planos geralmente cobrem várias situações: acidentes pessoais,
+            morte acidental, morte natural e assistências personalizadas. Conheça nossos produtos e entre em contato
+            para escolher a melhor opção.
           </p>
           <a href="#" class="btn btn--small">Saiba Mais</a>
         </div>
@@ -85,7 +89,10 @@
             Soluções para Locação
           </h3>
           <p>
-            As soluções de locação foram desenvolvidas para facilitar a vida de proprietários de imóveis, imobiliárias e inquilinos, substituindo com vantagens o fiador. As soluções trazem tranquilidade ao proprietários para o recebimento do aluguel e encargos vencidos, em caso de não pagamento pelo inquilino. Entre em contato para saber mais.
+            As soluções de locação foram desenvolvidas para facilitar a vida de proprietários de imóveis, imobiliárias e
+            inquilinos, substituindo com vantagens o fiador. As soluções trazem tranquilidade ao proprietários para o
+            recebimento do aluguel e encargos vencidos, em caso de não pagamento pelo inquilino. Entre em contato para
+            saber mais.
           </p>
           <a href="#" class="btn btn--small">Saiba Mais</a>
         </div>
@@ -108,7 +115,10 @@
             Seguro Residência
           </h3>
           <p>
-            Com um seguro residencial sua casa fica protegida por um custo muito menor do que você imagina. Além de proteger o bem mais precioso da sua família, você ainda conta com profissionais especializados em casos de pequenos imprevistos do dia a dia como reparos em eletrodomésticos, assistência de encanador e eletricista. Sem riscos e dores de cabeça, tudo por um custo que cabe no seu bolso. Fale conosco e faça sua cotação
+            Com um seguro residencial sua casa fica protegida por um custo muito menor do que você imagina. Além de
+            proteger o bem mais precioso da sua família, você ainda conta com profissionais especializados em casos de
+            pequenos imprevistos do dia a dia como reparos em eletrodomésticos, assistência de encanador e eletricista.
+            Sem riscos e dores de cabeça, tudo por um custo que cabe no seu bolso. Fale conosco e faça sua cotação
           </p>
           <a href="#" class="btn btn--small">Saiba Mais</a>
         </div>
@@ -118,7 +128,10 @@
             Seguro Empresarial
           </h3>
           <p>
-            O seguro empresarial é destinado para a pessoa física ou jurídica, proprietário ou locatário de um estabelecimento comercial, industrial ou de prestação de serviço. Ele garante que garantir o patrimônio da sua empresas está protegido contra os riscos a que estão expostos, proporcionando mais segurança e tranquilidade para sua você. Entre em contato e saiba todas as formas como sua empresa pode ficar protegida.
+            O seguro empresarial é destinado para a pessoa física ou jurídica, proprietário ou locatário de um
+            estabelecimento comercial, industrial ou de prestação de serviço. Ele garante que garantir o patrimônio da
+            sua empresas está protegido contra os riscos a que estão expostos, proporcionando mais segurança e
+            tranquilidade para sua você. Entre em contato e saiba todas as formas como sua empresa pode ficar protegida.
           </p>
           <a href="#" class="btn btn--small">Saiba Mais</a>
         </div>
@@ -128,7 +141,11 @@
             Seguro Saúde
           </h3>
           <p>
-            Seguro saúde é um seguro que visa garantir uma melhor qualidade de vida e mais tranquilidade para você e sua família, oferecendo assistência médica, terapêutica, hospitalar e obstétrica com opções de profissionais e estabelecimentos de saúde. Os seguros saúde podem ser contratados em 3 modalidades: individual/familiar, coletivo por adesão ou coletivo empresarial. Entre em contato para saber qual a melhor opção para o seu caso.
+            Seguro saúde é um seguro que visa garantir uma melhor qualidade de vida e mais tranquilidade para você e sua
+            família, oferecendo assistência médica, terapêutica, hospitalar e obstétrica com opções de profissionais e
+            estabelecimentos de saúde. Os seguros saúde podem ser contratados em 3 modalidades: individual/familiar,
+            coletivo por adesão ou coletivo empresarial. Entre em contato para saber qual a melhor opção para o seu
+            caso.
           </p>
           <a href="#" class="btn btn--small">Saiba Mais</a>
         </div>
@@ -138,7 +155,10 @@
             Seguro Automóvel
           </h3>
           <p>
-            O seguro de veículo (automóvel e motocicleta) é a forma mais completa de manter seu bem em segurança, mesmo quando você não está presente. Com diversas opções de seguros que combinam com o seu estilo de vida e suas necessidades temos as melhores soluções para o seu carro, moto, caminhão ou táxi. Escolha a alternativa que se encaixa melhor com a sua necessidade e fale conosco para ter uma cotação.
+            O seguro de veículo (automóvel e motocicleta) é a forma mais completa de manter seu bem em segurança, mesmo
+            quando você não está presente. Com diversas opções de seguros que combinam com o seu estilo de vida e suas
+            necessidades temos as melhores soluções para o seu carro, moto, caminhão ou táxi. Escolha a alternativa que
+            se encaixa melhor com a sua necessidade e fale conosco para ter uma cotação.
           </p>
           <a href="#" class="btn btn--small">Saiba Mais</a>
         </div>
@@ -148,7 +168,11 @@
             Previdência
           </h3>
           <p>
-            A previdência privada é uma forma de você assegurar um futuro tranquilo contribuindo com uma pequena quantia em dinheiro por um determinado período. Esse esse valor fica rendendo, e quanto mais tempo o dinheiro ficar investido, mais ele vai render. Os pagamentos podem ser mensais ou de uma só vez e você ainda pode fazer contribuições adicionais sempre que tiver algum dinheiro sobrando. Você pode retirar seu dinheiro quando precisar. Entre em contato para saber mais.
+            A previdência privada é uma forma de você assegurar um futuro tranquilo contribuindo com uma pequena quantia
+            em dinheiro por um determinado período. Esse esse valor fica rendendo, e quanto mais tempo o dinheiro ficar
+            investido, mais ele vai render. Os pagamentos podem ser mensais ou de uma só vez e você ainda pode fazer
+            contribuições adicionais sempre que tiver algum dinheiro sobrando. Você pode retirar seu dinheiro quando
+            precisar. Entre em contato para saber mais.
           </p>
           <a href="#" class="btn btn--small">Saiba Mais</a>
         </div>
@@ -171,7 +195,7 @@
         <div class="logos">
           <img src="img/Seguradoras/allianz.jpg" alt="Logo Allianz" />
         </div>
-          <div class="logos">
+        <div class="logos">
           <img src="img/Seguradoras/azul.jpg" alt="Logo Azul Seguros" />
         </div>
         <div class="logos">
@@ -213,69 +237,38 @@
       <h2 class="headline headline--centered">
         <strong>Fale Conosco</strong>
       </h2>
-      <h3
-        class="headline headline--centered  headline--gold headline--small headline--narrow headline--b-margin">
+      <h3 class="headline headline--centered  headline--gold headline--small headline--narrow headline--b-margin">
         Ficaremos felizes com o seu contato. Peça uma cotação ou tire suas dúvidas.
       </h3>
     </div>
-    
-      <form method="post" action="mailer-new.php" class="contact-form">
-        <div class="row">
-          <?php
-            if($_GET['success'] == 1) {
-                echo "<div class=\"form-messages sucess\">
-              Obrigado pelo contato. Responderemos o mais rápido possivel.
-            </div>";
-            }
 
-            if($_GET['success'] == -1) {
-                echo "<div class=\"form-messages error\">
-                Ops, alguma coisa deu errado. Tentar novamente.
-            </div>";
-            }
-          ?>
+    <form method="post" action="mailer-new.php" class="contact-form">
+      <div class="row">
         <div class="row">
-          <div class="col-1-of-3">
-            <label for="name">Nome</label>
-          </div>
           <div class="col-2-of-3">
             <input type="text" name="name" id="name" placeholder="Nome" required>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-1-of-3">
-            <label for="email">Email</label>
-          </div>
-          <div class="col-2-of-3">
+            <input type="tel" name="telefone" id="telefone" placeholder="Telefone" required>
             <input type="email" name="email" id="email" placeholder="E-mail" required>
-          </div>
-        </div>      
-        <div class="row">
-          <div class="col-1-of-3">
-            <label for="message">Mensagem</label>
-          </div>
-          <div class="col-2-of-3">
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Deixe a sua mensagem" required></textarea>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-1-of-3">
-            <label for="button">&nbsp;</label>
-          </div>
-          <div class="col-2-of-3">
+            <input type="text" name="assunto" id="assunto" placeholder="Assunto" required>
+            <textarea name="mgs" id="msg" cols="30" rows="10" placeholder="Deixe a sua mensagem" required></textarea>
             <input type="submit" value="Enviar">
+
           </div>
         </div>
-      </form>
-    </div>
+        </div>
+      </div>
+    </form>
   </section>
 
   <footer class="site-footer">
     <div class="wrapper">
       <p>
-        <span class="site-footer__text">Copyright &copy; 2020 <strong>Meinberg Corretora de Seguros</strong>. All rights reserved. Criado e desenvolvido por <strong><a href="https://fernandochiquito.github.io" target="_blank">Fernando Chiquito</a></strong>.
+        <span class="site-footer__text">Copyright &copy; 2020 <strong>Meinberg Corretora de Seguros</strong>. All rights
+          reserved. Criado e desenvolvido por <strong><a href="https://fernandochiquito.github.io"
+              target="_blank">Fernando Chiquito</a></strong>.
         </span>
-        <a href="mailto:paulo@meinberg.biz" title="Entre em contato pra ter a sua cotação!" class="btn btn--small">Entre em Contato</a>
+        <a href="mailto:paulo@meinberg.biz" title="Entre em contato pra ter a sua cotação!" class="btn btn--small">Entre
+          em Contato</a>
       </p>
     </div>
 

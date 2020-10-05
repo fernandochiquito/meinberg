@@ -1,35 +1,21 @@
 <?php
 
-    // Get the form fields, removes html tags and whitespace.
-    $name = strip_tags(trim($_POST["name"]));
-    $name = str_replace(array("\r","\n"),array(" "," "),$name);
-    $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-    $message = trim($_POST["msg"]);
+if (isset($_POST['submit'])) {
+    $name = $_POST['name'];
+    $telefone = $_POST['telefone'];
+    $mailFrom = $_POST['mail'];
+    $assunto = $_POST['assunto'];
+    $message = $_POST['msg'];
 
-    // Check the data.
-    if (empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location: http://www.meinberg.biz/new/index.php?success=-1#form");
-        exit;
-    }
+    $mailTo = "contato@fernandochiquito.com";
+    $headers = "Fom: ".$mailFrom;
+    $txt = "Você Recebeu um email de ".$name.".\n\n".$message;
 
-    // Set the recipient email address. Update this to YOUR desired email address.
-    $recipient = "paulo@meinberg.biz";
 
-    // Set the email subject.
-    $subject = "Fale Conosco $name";
 
-    // Build the email content.
-    $email_content = "Name: $name\n";
-    $email_content .= "Email: $email\n\n";
-    $email_content .= "Msg:\n$message\n";
+    mail($mailTo, $assunto, $txt, $headers);
+    header("Location: index.php?mailsend");
+}
 
-    // Build the email headers.
-    $email_headers = "From: $name <$email>";
-
-    // Send the email.
-    mail($recipient, $subject, $email_content, $email_headers);
-    
-    // Redirect to the index.html page with success code
-    header("Location: http://www.meinberg.biz/new/index.php?success==1#form");
 
 ?>
