@@ -260,7 +260,7 @@ if (isset($_POST['txtdest']))
       </h3>
     </div>
 
-    <form method="post" action="mailer-new.php" class="contact-form">
+    <form method="POST" action="https://formspree.io/f/myybkpnv" class="contact-form">
       <div class="row">
         <div class="row">
           <div class="col-2-of-3">
