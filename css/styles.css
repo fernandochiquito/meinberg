@@ -119,15 +119,17 @@ ul {
   margin-right: auto;
 }
 
-.btn {
+.btn, .btn:link, .btn:visited {
   background-color: #BD9441;
   color: #fff;
   text-decoration: none;
-  padding: .75rem 1.2rem;
+  padding: 0.75rem 1.2rem;
   display: inline-block;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
   border-radius: 2px;
+  border: none;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -146,9 +148,9 @@ ul {
 }
 
 .btn--small {
-  font-size: .75rem;
-  padding: .5rem 1rem;
-  margin-top: .65rem;
+  font-size: 0.75rem;
+  padding: 0.5rem 1rem;
+  margin-top: 0.65rem;
 }
 
 .large-hero {
@@ -759,6 +761,7 @@ ion-icon {
 label {
   color: #141414;
   font-weight: 300;
+  font-family: inherit;
 }
 
 input[type="text"],
@@ -768,6 +771,7 @@ select,
 textarea {
   width: 100%;
   padding: 7px;
+  width: 90%;
 }
 
 textarea {
@@ -780,26 +784,16 @@ input[type="checkbox"] {
 
 *:focus {
   outline: none;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .form-messages {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
   padding: 10px;
   border: 1px solid #cccccc;
   border-radius: 3px;
   margin-bottom: 30px;
-}
-
-.sucess {
-  background-color: #BD9441;
-  color: white;
-  text-align: center;
-}
-
-.error {
-  background-color: #070035;
-  color: white;
-  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */

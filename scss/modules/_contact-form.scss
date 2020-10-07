@@ -6,6 +6,7 @@
 label {
   color: $mainBlack;
   font-weight: 300;
+  font-family: inherit;
 }
 
 input[type="text"],
@@ -15,6 +16,7 @@ select,
 textarea {
   width: 100%;
   padding: 7px;
+  width: 90%;
 }
 
 textarea {
@@ -27,24 +29,14 @@ input[type="checkbox"] {
 
 *:focus {
   outline: none;
+  box-shadow: 0 1rem 2rem rgba($color: black, $alpha: 0.2);
 }
 
 .form-messages {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
   padding: 10px;
   border: 1px solid #cccccc;
   border-radius: 3px;
   margin-bottom: 30px;
-}
-.sucess {
-  background-color: $mainGold;
-  color: white;
-  text-align: center;
-}
-
-.error {
-  background-color: $mainBlue;
-  color: white;
-  text-align: center;
 }
