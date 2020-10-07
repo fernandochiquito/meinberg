@@ -1,0 +1,5 @@
+<% Response.Redirect("https://www.meinberg.biz/") %>
+
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.meinberg.biz/$1 [R,L]

@@ -1,0 +1,42 @@
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+label {
+  color: $mainBlack;
+  font-weight: 300;
+  font-family: inherit;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 7px;
+  width: 90%;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type="checkbox"] {
+  margin: 10px 5px 10px 0;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba($color: black, $alpha: 0.2);
+}
+
+.form-messages {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
