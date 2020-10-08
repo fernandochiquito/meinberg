@@ -321,6 +321,10 @@ ul {
   width: calc( ((100% - (30px * 2)) / 3) * 2 + 30px);
 }
 
+.row .col-2-of-3--special {
+  margin: 0 auto;
+}
+
 .row .col-1-of-4 {
   width: calc((100% - (30px * 3)) / 4);
 }
@@ -542,7 +546,7 @@ ion-icon {
 
 @media (min-width: 800px) {
   .site-header {
-    background-color: rgba(20, 20, 20, 0.3);
+    background-color: rgba(20, 20, 20, 0.5);
   }
 }
 
@@ -741,8 +745,15 @@ ion-icon {
   color: #EDFFD9;
   display: block;
   padding: 5px 8px;
-  font-size: .8rem;
+  font-size: 0.8rem;
   background-color: rgba(20, 20, 20, 0.5);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.primary-nav a:hover {
+  color: #070035;
+  border-bottom: 1px solid #070035;
 }
 
 @media (min-width: 800px) {
@@ -795,5 +806,102 @@ input[type="checkbox"] {
   border: 1px solid #cccccc;
   border-radius: 3px;
   margin-bottom: 10px;
+}
+
+.hero {
+  position: relative;
+  height: 40vh;
+  background-image: url(../../img/charles-forerunner-3fPXt37X6UQ-unsplash-min.jpg);
+  background-size: cover;
+  background-position: center;
+  border-bottom: 10px solid #070035;
+}
+
+.hero__content {
+  position: absolute;
+  top: 45%;
+  left: 27%;
+}
+
+.hero__title {
+  display: block;
+  text-align: right;
+  color: #EDFFD9;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  margin: 0;
+  -webkit-animation: moveInLeft 1s ease-out;
+          animation: moveInLeft 1s ease-out;
+}
+
+.curriculo {
+  padding: 3rem;
+}
+
+.quem-somos__shape {
+  height: 175px;
+  width: 175px;
+  float: left;
+  shape-outside: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+  position: relative;
+  margin-right: 1rem;
+}
+
+.quem-somos__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  min-height: 100%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+.quem-somos__caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 20%);
+          transform: translate(-50%, 20%);
+  color: #EDFFD9;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.quem-somos:hover .quem-somos__caption {
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.quem-somos:hover .quem-somos__img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-filter: blur(3px) brightness(80%);
+          filter: blur(3px) brightness(80%);
+}
+
+.quem-somos__text {
+  position: relative;
+  top: 70%;
+  color: #141414;
+  -webkit-column-count: 2;
+          column-count: 2;
+  -webkit-column-gap: 3rem;
+          column-gap: 3rem;
+  -webkit-column-rule: 1px solid rgba(20, 20, 20, 0.2);
+          column-rule: 1px solid rgba(20, 20, 20, 0.2);
+  text-align: justify;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 /*# sourceMappingURL=styles.css.map */

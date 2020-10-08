@@ -36,6 +36,10 @@ $gutter-horizontal: 30px;
     width: calc(
       ((100% - (#{$gutter-horizontal} * 2)) / 3) * 2 + #{$gutter-horizontal}
     );
+
+    &--special {
+      margin: 0 auto;
+    }
   }
 
   .col-1-of-4 {

@@ -1,0 +1,25 @@
+.hero {
+  position: relative;
+  height: 40vh;
+  background-image: url(../../img/charles-forerunner-3fPXt37X6UQ-unsplash-min.jpg);
+  background-size: cover;
+  background-position: center;
+  border-bottom: 10px solid $mainBlue;
+
+  &__content {
+    position: absolute;
+    top: 45%;
+    left: 27%;
+  }
+
+  &__title {
+    display: block;
+    text-align: right;
+    color: $mainWhite;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    margin: 0;
+    animation: moveInLeft 1s ease-out;
+  }
+}
