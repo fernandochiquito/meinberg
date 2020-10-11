@@ -1,11 +1,19 @@
-$grid-width: 1140px;
-$gutter-vertical: 10px;
-$gutter-horizontal: 30px;
+$grid-width: 71.25rem;
+$gutter-vertical: .625rem;
+$gutter-vertical-small: .60rem;
+$gutter-horizontal: 1.875rem;
 
 .grid {
   display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  grid-gap: 1.25rem;
+  grid-template-columns: repeat(auto-fill, minmax(28.125rem, 1fr));
+
+  @include respond(tab-port) {
+    margin-right: 0;
+    margin-bottom: $gutter-vertical-small;
+     }
+
+
 }
 
 .row {
@@ -14,14 +22,29 @@ $gutter-horizontal: 30px;
 
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
+
+    @include respond(tab-port) {
+      margin-bottom: $gutter-vertical-small;
+       }
   }
 
-  @include clearfix [class^= "col-" ] {
+  @include clearfix;
+  [class^= "col-" ] {
     float: left;
 
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
+
+      @include respond(tab-port) {
+        margin-right: 0;
+        margin-bottom: $gutter-vertical-small;
+         }
     }
+
+    @include respond(tab-port) {
+      width: 100% !important;
+       }
+
   }
 
   .col-1-of-2 {
