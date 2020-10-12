@@ -95,19 +95,19 @@ ORDER TO ADJUST: Base + Typography > General Layout + Grid > Page Layouts > Comp
 
 @media (max-width: 75em) {
   html {
-    font-size: 80%;
+    font-size: 90%;
   }
 }
 
 @media (max-width: 56.25em) {
   html {
-    font-size: 75%;
+    font-size: 85%;
   }
 }
 
 @media (max-width: 37.5em) {
   html {
-    font-size: 74%;
+    font-size: 80%;
   }
 }
 
@@ -330,6 +330,17 @@ ul {
   .grid {
     margin-right: 0;
     margin-bottom: 0.6rem;
+    -ms-grid-columns: (1fr)[auto-fill];
+        grid-template-columns: repeat(auto-fill, 1fr);
+  }
+}
+
+@media (max-width: 37.5em) {
+  .grid {
+    margin-right: 0;
+    margin-bottom: 0.6rem;
+    -ms-grid-columns: ()[1fr];
+        grid-template-columns: repeat(1fr);
   }
 }
 

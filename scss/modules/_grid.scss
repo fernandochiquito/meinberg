@@ -1,6 +1,6 @@
 $grid-width: 71.25rem;
-$gutter-vertical: .625rem;
-$gutter-vertical-small: .60rem;
+$gutter-vertical: 0.625rem;
+$gutter-vertical-small: 0.6rem;
 $gutter-horizontal: 1.875rem;
 
 .grid {
@@ -11,9 +11,13 @@ $gutter-horizontal: 1.875rem;
   @include respond(tab-port) {
     margin-right: 0;
     margin-bottom: $gutter-vertical-small;
-     }
-
-
+    grid-template-columns: repeat(auto-fill, 1fr);
+  }
+  @include respond(phone) {
+    margin-right: 0;
+    margin-bottom: $gutter-vertical-small;
+    grid-template-columns: repeat(1fr)
+  }
 }
 
 .row {
@@ -25,11 +29,11 @@ $gutter-horizontal: 1.875rem;
 
     @include respond(tab-port) {
       margin-bottom: $gutter-vertical-small;
-       }
+    }
   }
 
   @include clearfix;
-  [class^= "col-" ] {
+  [class^="col-"] {
     float: left;
 
     &:not(:last-child) {
@@ -38,13 +42,12 @@ $gutter-horizontal: 1.875rem;
       @include respond(tab-port) {
         margin-right: 0;
         margin-bottom: $gutter-vertical-small;
-         }
+      }
     }
 
     @include respond(tab-port) {
       width: 100% !important;
-       }
-
+    }
   }
 
   .col-1-of-2 {
