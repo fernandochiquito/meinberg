@@ -852,7 +852,7 @@ ion-icon {
 
 .primary-nav li {
   display: inline-block;
-  padding-right: 7 px;
+  padding-right: 7px;
 }
 
 @media (min-width: 800px) {
