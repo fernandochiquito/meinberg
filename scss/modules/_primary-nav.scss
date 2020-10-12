@@ -1,53 +1,57 @@
 .primary-nav {
+  padding-top: 10px;
 
-    padding-top: 10px;
+  @include atMedium {
+    padding-top: 0;
+  }
+
+  &--col-right {
+    @include atMedium {
+      float: right;
+    }
+  }
+
+  ul {
+    padding: 0;
+    @include clearfix;
+  }
+
+  li {
+    display: inline-block;
+    padding-right: 7 px;
 
     @include atMedium {
-        padding-top: 0;
+      padding-right: 20px;
+      float: left;
+      display: block;
+    }
+  }
+
+  li:last-child {
+    padding-right: 0;
+
+    @include atMedium {
+      padding-right: 20px;
+    }
+  }
+
+  a {
+    color: $mainWhite;
+    display: block;
+    padding: 5px 8px;
+    font-size: 0.8rem;
+    background-color: rgba($color: $mainBlack, $alpha: 0.5);
+    transition: all 0.2s;
+
+    &:hover {
+      color: $mainBlue;
+      border-bottom: 1px solid $mainBlue;
     }
 
-    &--col-right {
-        @include atMedium {
-            float: right;
-        }
+    @include atMedium {
+      font-size: 1rem;
+      padding: 10px 0;
+      background-color: transparent;
     }
-
-    ul{
-        padding: 0;
-        @include clearfix;
-    }
-    
-    li {
-        display: inline-block;
-        padding-right: 7 px;
-
-        @include atMedium {
-            padding-right: 20px;
-            float: left;
-            display: block;
-        }
-    }
-
-    li:last-child {
-        padding-right: 0;
-
-        @include atMedium {
-            padding-right: 20px;
-        }
-    }
-
-    a {
-        color: $mainWhite;
-        display: block;
-        padding: 5px 8px;
-        font-size: .8rem;
-        background-color: rgba($color: $mainBlack, $alpha: .5);
-
-        @include atMedium {
-            font-size: 1rem;
-            padding: 10px 0;
-            background-color: transparent;
-
-        }
-    }
+  }
 }

@@ -1,11 +1,23 @@
-$grid-width: 1140px;
-$gutter-vertical: 10px;
-$gutter-horizontal: 30px;
+$grid-width: 71.25rem;
+$gutter-vertical: 0.625rem;
+$gutter-vertical-small: 0.6rem;
+$gutter-horizontal: 1.875rem;
 
 .grid {
   display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  grid-gap: 1.25rem;
+  grid-template-columns: repeat(auto-fill, minmax(28.125rem, 1fr));
+
+  @include respond(tab-port) {
+    margin-right: 0;
+    margin-bottom: $gutter-vertical-small;
+    grid-template-columns: repeat(auto-fill, 1fr);
+  }
+  @include respond(phone) {
+    margin-right: 0;
+    margin-bottom: $gutter-vertical-small;
+    grid-template-columns: repeat(1fr)
+  }
 }
 
 .row {
@@ -14,13 +26,27 @@ $gutter-horizontal: 30px;
 
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
+
+    @include respond(tab-port) {
+      margin-bottom: $gutter-vertical-small;
+    }
   }
 
-  @include clearfix [class^= "col-" ] {
+  @include clearfix;
+  [class^="col-"] {
     float: left;
 
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
+
+      @include respond(tab-port) {
+        margin-right: 0;
+        margin-bottom: $gutter-vertical-small;
+      }
+    }
+
+    @include respond(tab-port) {
+      width: 100% !important;
     }
   }
 
@@ -36,6 +62,10 @@ $gutter-horizontal: 30px;
     width: calc(
       ((100% - (#{$gutter-horizontal} * 2)) / 3) * 2 + #{$gutter-horizontal}
     );
+
+    &--special {
+      margin: 0 auto;
+    }
   }
 
   .col-1-of-4 {
